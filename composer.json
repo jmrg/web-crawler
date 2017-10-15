@@ -19,7 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "WebCrawler\\": "app/",
+      "App\\": "app/",
       "Framework\\": "core/"
     }
   },

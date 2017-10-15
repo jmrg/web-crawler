@@ -12,7 +12,7 @@ class View
 {
     /**
      * Capture the path with source where from
-     * load the view.
+     * load the View.
      *
      * @var string
      */
@@ -24,7 +24,7 @@ class View
     private $data = [];
 
     /**
-     * Return the path to view.
+     * Return the path to View.
      *
      * @return string
      */
@@ -34,7 +34,7 @@ class View
     }
 
     /**
-     * Set the path to view.
+     * Set the path to View.
      *
      * @param $path
      * @return $this
@@ -47,7 +47,7 @@ class View
     }
 
     /**
-     * Set the data that will use for the view.
+     * Set the data that will use for the View.
      *
      * @param array $data
      * @return $this
@@ -60,7 +60,7 @@ class View
     }
 
     /**
-     * Return the data that will use for the view.
+     * Return the data that will use for the View.
      *
      * @return array
      */
@@ -99,7 +99,7 @@ class View
     }
 
     /**
-     * Draw view and wind up script.
+     * Draw View and wind up script.
      */
     public function render()
     {

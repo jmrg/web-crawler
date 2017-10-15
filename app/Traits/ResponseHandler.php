@@ -1,6 +1,6 @@
 <?php
 
-namespace WebCrawler\Traits;
+namespace App\Traits;
 
 use Psr\Http\Message\ResponseInterface;
 
