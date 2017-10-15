@@ -3,37 +3,28 @@
 namespace WebCrawler\Models;
 
 use Psr\Http\Message\ResponseInterface;
-use WebCrawler\Exceptions\NewsException;
+use WebCrawler\Exceptions\StoryException;
 use WebCrawler\Traits\ResponseHandler;
 
 /**
- * Class News
+ * Class Story
  * @package WebCrawler\Models
  */
-class News
+class Story
 {
     use ResponseHandler;
 
     /**
-     * News constructor.
+     * Story constructor.
      * @param \Psr\Http\Message\ResponseInterface $res
-     * @throws NewsException
+     * @throws StoryException
      */
     public function __construct(ResponseInterface $res)
     {
         $this->response = $res;
 
         if (!$this->isStatusCodeAccepted()) {
-            throw new NewsException('Error: Request not complete');
+            throw new StoryException('Error: Request not complete');
         }
-    }
-
-    /**
-     * @param int $total
-     * @return array
-     */
-    public function getTop($total = 30)
-    {
-        return array_slice($this->contents = $this->getContents(), 0, $total);
     }
 }
