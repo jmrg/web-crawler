@@ -1,14 +1,14 @@
 <?php
 
-namespace WebCrawler\Models;
+namespace App\Models;
 
 use Psr\Http\Message\ResponseInterface;
-use WebCrawler\Exceptions\NewsException;
-use WebCrawler\Traits\ResponseHandler;
+use App\Exceptions\NewsException;
+use App\Traits\ResponseHandler;
 
 /**
  * Class News
- * @package WebCrawler\Models
+ * @package App\Models
  */
 class News
 {

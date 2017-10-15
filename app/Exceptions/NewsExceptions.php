@@ -1,5 +1,5 @@
 <?php
-namespace WebCrawler\Exceptions;
+namespace App\Exceptions;
 
 class NewsException extends \Exception
 {

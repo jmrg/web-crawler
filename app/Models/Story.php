@@ -1,14 +1,14 @@
 <?php
 
-namespace WebCrawler\Models;
+namespace App\Models;
 
 use Psr\Http\Message\ResponseInterface;
-use WebCrawler\Exceptions\StoryException;
-use WebCrawler\Traits\ResponseHandler;
+use App\Exceptions\StoryException;
+use App\Traits\ResponseHandler;
 
 /**
  * Class Story
- * @package WebCrawler\Models
+ * @package App\Models
  */
 class Story
 {

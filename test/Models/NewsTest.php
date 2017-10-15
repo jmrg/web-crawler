@@ -1,14 +1,14 @@
 <?php
 
-namespace WebCrawler\Test\Models;
+namespace App\Test\Models;
 
 use GuzzleHttp\Client;
 use PHPUnit\Framework\TestCase;
-use WebCrawler\Models\News;
+use App\Models\News;
 
 /**
  * Class NewsTest
- * @package WebCrawler\Test\Models
+ * @package App\Test\Models
  */
 class NewsTest extends TestCase
 {
