@@ -1,3 +1,3 @@
 <?php
 
-$collector->get('/', ['App\Controllers\HomeController', 'home']);
+$collector->get('/', ['App\WebCrawler\Controllers\NewsList', 'listing']);
