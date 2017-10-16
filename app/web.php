@@ -1,3 +1,3 @@
 <?php
 
-$collector->get('/', ['App\WebCrawler\Controllers\NewsList', 'listing']);
+$collector->get('/{filter}?', ['App\WebCrawler\Controllers\NewsList', 'listing']);
