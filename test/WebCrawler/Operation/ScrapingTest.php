@@ -11,6 +11,9 @@ use PHPUnit\Framework\TestCase;
  */
 class ScrapingTest extends TestCase
 {
+    /**
+     * @covers Scraping::getNews()
+     */
     public function testGetFirstThirtyNewsWithContentsAsArray()
     {
         $Scraping = new Scraping();
